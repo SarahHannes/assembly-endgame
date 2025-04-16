@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useWindowSize } from "react-use";
+
 import { clsx } from "clsx";
 import Confetti from "react-confetti";
 
@@ -6,6 +8,8 @@ import { languages } from "/languages.js";
 import { getFarewellText, getRandomWord } from "./utils.js";
 
 export default function App() {
+  const { width, height } = useWindowSize();
+
   // State values
   const [currentWord, setCurrentWord] = useState(getRandomWord);
   const [guessedLetters, setGuessedLetters] = useState([]);
@@ -182,7 +186,7 @@ export default function App() {
         </button>
       )}
 
-      {isGameWon && <Confetti />}
+      {isGameWon && <Confetti width={width} height={height} />}
     </main>
   );
 }

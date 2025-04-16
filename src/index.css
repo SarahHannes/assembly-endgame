@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #d9d9d9;
+  padding: 20px;
+  height: 100vh;
+}
+
+main {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+
+header {
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #f9f4da;
+}
+
+header > p {
+  font-size: 0.875rem;
+  color: #8e8e8e;
+}
+
+section.game-won {
+  background-color: #10a95b;
+}
+
+section.game-lost {
+  background-color: #ba2a2a;
+}
+
+section.farewell {
+  font-style: italic;
+  justify-content: center;
+  background-color: #7a5ea7;
+  border: 1px dashed #323232;
+}
+
+section.game-status {
+  min-height: 63.5px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f9f4da;
+  border-radius: 4px;
+  margin-block: 30px;
+}
+
+section.game-status > p {
+  margin: 5px;
+}
+
+section.game-status > h2 {
+  font-size: 1.25rem;
+  margin: 5px;
+}
+
+section.chips-container {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 350px; */
+  justify-content: center;
+  gap: 4.5px;
+}
+
+div.chip {
+  position: relative;
+  padding: 4.5px;
+  border-radius: 3px;
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+div.chip.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.letters-container {
+  margin-inline: auto;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-block: 40px;
+  /* max-width: 350px; */
+  flex-wrap: wrap;
+}
+
+.letter {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  color: #f9f4da;
+  background-color: #323232;
+  border-bottom: 1px solid #f9f4da;
+  padding-top: 10px;
+  font-size: 1.124rem;
+}
+
+.letter.wrong-guess {
+  background-color: #ec5d49;
+}
+
+section.keyboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+section.keyboard-container > button {
+  width: 40px;
+  height: 40px;
+  background-color: #fcba29;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section.keyboard-container > .correct {
+  background-color: #10a95b;
+}
+
+section.keyboard-container > .wrong {
+  background-color: #ec5d49;
+}
+
+section.keyboard-container > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.new-game-btn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 36px;
+  background-color: #11b5e5;
+  color: #1e1e1e;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

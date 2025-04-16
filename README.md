@@ -1,12 +1,41 @@
-# React + Vite
+# Assembly - Endgame 🦸🏻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Unleash the superhero in you and save programming languages from extinction. <strong><a href="https://sarahhannes.github.io/assembly-endgame/"> Click here to play!</a></strong>
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Screenshot](#screenshot)
+- [Built with](#built-with)
+- [Possible improvements](#possible-improvements)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users should be able to:
+- Play hangman.
+- See guessed letter after game is over.
+- See confetti animation when game is won.
+
+### Screenshot
+
+|Mobile 375px|
+| ---------------------------------------------- |
+|     <a href="screenshots/Mobile375.png">![Mobile screenshot](screenshots/Mobile375.png)</a>   |
+|     <a href="screenshots/Mobile375-win.png">![Mobile screenshot won](screenshots/Mobile375-win.png)</a> |
+|     <a href="screenshots/Mobile375-lose.png">![Mobile screenshot lose](screenshots/Mobile375-lose.png)</a>   |
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+### Possible improvements
+- Add timer
+- Show remaining moves
+
+# Credits
+- The course: <a href="https://scrimba.com/learn-react-c0e">Scrimba React course</a>
